@@ -1,4 +1,4 @@
-package com.example;
+package com.example.leetcode.easy;
 
 import java.util.Arrays;
 
@@ -51,47 +51,35 @@ Yet another direction of thought is to consider the elements to be removed as no
  */
 public class RemoveElement {
 
-    public int removeElement(int[] nums, int val) {
+    public int removeElement2(int[] nums, int val) {
         int i = 0;
-        int j = nums.length - 1;
 
-        while(j >= i) {
+        //val=1
 
-            if(nums[i] != val) {
+        // 1
+        // i
+        // j
+
+        for(int j=0; j<nums.length;j++){
+            if(nums[j]!=val){
+                nums[i]=nums[j];
                 i++;
-            } else {
-                if(j == i){
-                    if(nums[j] == val){
-                        nums[j] = -1;
-                        j--;
-                    }                    
-                } else {
-                    if(nums[j] != val){
-                        nums[i] = nums[j];
-                        i++;
-                    }
-                    
-                    nums[j] = -1;
-                    j--;
-                }
-                
             }
         }
-
-        System.out.println(Arrays.toString(nums));
         return i;
     }
 
     
 
-    public int removeElement2(int[] nums, int val) {
-        int index = 0;
-        for(int i=0; i<nums.length;i++){
-            if(nums[i]!=val){
-                nums[index]=nums[i];
-                index++;
+    public int removeElement(int[] nums, int val) {
+
+        int i = 0;
+        for(int j=0; j<nums.length;j++){
+            if(nums[j]!=val){
+                nums[i]=nums[j];
+                i++;
             }
         }
-        return index;
+        return i;
     }
 }

@@ -1,5 +1,6 @@
-package com.example;
+package com.example.leetcode.easy;
 
+import com.example.leetcode.easy.RemoveElement;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

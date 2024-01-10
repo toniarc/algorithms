@@ -1,9 +1,11 @@
-package com.example;
+package com.example.leetcode.easy;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.example.leetcode.easy.ListNode;
+import com.example.leetcode.easy.MergeTwoSortedLists;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

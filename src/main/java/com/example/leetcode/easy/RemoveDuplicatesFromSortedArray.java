@@ -1,4 +1,4 @@
-package com.example;
+package com.example.leetcode.easy;
 
 /*
 26 - Remove Duplicates From Sorted Array
